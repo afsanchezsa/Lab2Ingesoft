@@ -108,11 +108,11 @@ public class Association implements Serializable{
         this.grades = grades;
     }
 
-    UserRole getUserRole( ){
+    public UserRole getUserRole( ){
         return userRole;
     }
 
-    void setUserRole( UserRole userRole ){
+    public void setUserRole( UserRole userRole ){
         this.userRole = userRole;
     }
 

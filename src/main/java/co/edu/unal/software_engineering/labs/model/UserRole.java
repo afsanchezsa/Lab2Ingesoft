@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 @Entity
 @Table( name = "user_role", schema = "public" )
-class UserRole implements Serializable{
+public class UserRole implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
@@ -24,7 +24,9 @@ class UserRole implements Serializable{
      * Constructors
      */
 
-    public UserRole( ){ }
+    public UserRole( ){ 
+        this.userRolePK=new UserRolePK();
+    }
 
     /**
      * Getters and Setters

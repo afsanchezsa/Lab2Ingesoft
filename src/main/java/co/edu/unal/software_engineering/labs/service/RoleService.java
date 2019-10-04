@@ -18,7 +18,7 @@ public class RoleService{
 
 
     public Role findById( Integer id ){
-        return roleRepository.findById( id ).orElse( null );
+        return roleRepository.findById(id).orElse( null );
     }
 
     public List<Role> getAll( ){
